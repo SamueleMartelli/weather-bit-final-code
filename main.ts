@@ -54,10 +54,10 @@ basic.forever(function () {
         row = "" + input.runningTime() + "," + Math.idiv(weatherbit.temperature(), 100) + "," + Math.idiv(weatherbit.humidity(), 1024) + "," + Math.idiv(weatherbit.pressure(), 25600) + "," + weatherbit.altitude()
         basic.showLeds(`
             . . . . .
-            . . . . #
-            . . . # .
-            # . # . .
-            . # . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
             `)
         serial.writeLine(row)
         basic.showLeds(`
